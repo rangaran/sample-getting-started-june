@@ -49,7 +49,7 @@ public class CustomConfigSource implements ConfigSource {
   }
 
   public Map<String, String> getProperties() {
-    Map<String,String> m = new HashMap<String, String>();
+    Map<String, String> m = new HashMap<String, String>();
     String jsonData = this.readFile(this.fileLocation);
     JsonParser parser = Json.createParser(new StringReader(jsonData));
     String key = null;
